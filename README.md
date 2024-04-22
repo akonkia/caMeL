@@ -1,4 +1,4 @@
-caMeL - chemometrics applied machine learning interface
+caMeL - a chemometrics applied machine learning interface
 
 Notes on the caMeL app:
 
