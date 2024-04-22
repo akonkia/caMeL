@@ -1,3 +1,4 @@
+caMeL - chemometrics applied machine learning interface
 
 Notes on the caMeL app:
 
@@ -36,7 +37,7 @@ This repository contains one model, predicting dry matter content (in %) - DM. T
 
 Want to create you own models and use them with caMeL?
 - caMeL calls external scripts to run the models. It was done to allow for more freedom in creating models (you can change this behaviour with a little programming experience to launch models globally - this will speed up the process).
-- a model is called by a function predictSpectra with two parameters: spectraPred (an object holding the spectra of a singular sample, read from the .spc or .csv file), modelscript (a pointer to path where the script to be sourced is placed). These two objects are created by the app for your. You need to provide the logic to create the predictions.
+- a model is called by a function predictSpectra with two parameters: spectraPred (an object holding the spectra of a singular sample, read from the .spc or .csv file), modelscript (a pointer to path where the script to be sourced is placed). These two objects are created by the app for your. You need to provide the logic to return the predictions. Optionally, return the calculations for predMD as well (mahalanobis based calculations to check if your new sample is similar to the samples used in the model training).
 - use createModelsFile.R to create a .txt file that will point the app to the models you want to use. It is necessary to follow the schema: you need the model prefix and the script that will be called by the app to perform calculation.
 - in your model script, contain all information necessary to return predictions (a "predicted" object). See DM.R for an example of a callable model compatible with caMeL.
 
