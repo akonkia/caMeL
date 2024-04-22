@@ -3,7 +3,7 @@ Notes on the caMeL app:
 
 If you want to use the caMeL app, there are the following steps  [(-) steps are optional]:
 - download the full caMeL repository and folder with R 4.2.0 to your drive of choice (url: https://cran.r-project.org/bin/windows/base/old/4.2.0/).
-- remove file Options.RDS as it may contain old settings (it is in the /models folder).
+- remove file Options.RDS, if present, as it may contain old settings (it is in the /models folder).
 - the code in app.R, run.R and camel.bat needs to be changed to reflect the <filepath>. Go for an absolute path.
 - move the caMeL shortcut file to your Desktop.
 (-) if the icon does not present a camel, change the shortcut icon to camelapha.ico by going into "Properties" of the shortcut and changing icon path.
