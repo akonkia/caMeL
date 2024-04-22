@@ -17,7 +17,7 @@ When the app is pointed to a folder to scan for files, it will create:
 - fileList.txt file.
 
 How the app works:
-- you use the shortcut icon to launch a .bat file (work on Windows, create a .command file on macOS).
+- you use the shortcut icon to launch a .bat file (works on Windows, create a .command file on macOS).
 - a Shiny R app will be launched in your browser.
 - point the caMeL app to a folder of your choice and start scanning for .csv of .spc files.
 - change the app settings if you want to merge files.
