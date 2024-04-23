@@ -1,3 +1,5 @@
+<img src='caMeLalpha.png' width=30% align="center">
+
 caMeL - a chemometrics applied machine learning interface
 
 Notes on the caMeL app:
@@ -5,7 +7,7 @@ Notes on the caMeL app:
 If you want to use the caMeL app, there are the following steps  [(-) steps are optional]:
 - download the full caMeL repository and folder with R 4.2.0 to your drive of choice (url: https://cran.r-project.org/bin/windows/base/old/4.2.0/).
 - remove file Options.RDS, if present, as it may contain old settings (it is in the /models folder).
-- the code in app.R, run.R and camel.bat needs to be changed to reflect the <filepath>. Go for an absolute path.
+- the code in app.R, run.R and camel.bat needs to be changed to reflect the <filepath>. Go for an absolute path. For example, if you have R 4.2.0 and caMeL folders on the D drive, subsitute <filepath> with D:
 - move the caMeL shortcut file to your Desktop.
 (-) if the icon does not present a camel, change the shortcut icon to camelapha.ico by going into "Properties" of the shortcut and changing icon path.
 (-) if the terminal stays maximized after the app launches, you can change this behaviour by going into shortcut>"Properties" (set to Minimise window).
@@ -31,7 +33,7 @@ The /lookhere folder contains .spc files that were used for testing and demonstr
 The distanceMs file contains Mahalanobis distance measure (MD) for each sample as compared to the calibration subset used to create the predictive model. LN is the distance to the closest local neighbour. If the sample does not have close neighbours, it will be marked with a blue dot and halo. It can be picked up to extend the calibration. If the sample has a very distant MD score and no local neighbours, it will be flagged with red color and a halo.
 
 
-This app works best with R 4.2.0. Newer R releases destroyed several dependencies in packages used by the app. If you have R, but the app still does not work, install Rstudio and try running the app.R script in RStudio to troubloeshoot.
+This app works best with R 4.2.0. Newer R releases destroyed several dependencies in packages used by the app. If you have R, but the app still does not work, install Rstudio and try running the app.R script in RStudio to troubloeshoot. If you encounter problems with setting the app environment, consider downloading this file (https://figshare.com/articles/software/R-4_2_0_with_all_libraries_necessary_for_caMeL/25670964) containing R 4.2.0 and all libraries for caMeL.
 
 This repository contains one model, predicting dry matter content (in %) - DM. This model was built to work with .spc output from Corona Zeiss Extreme NIRS spectrometer. You can test the app on supplied .spc files in the "look here" folder and make modifications as you need.
 
