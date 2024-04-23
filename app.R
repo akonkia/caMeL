@@ -445,7 +445,7 @@ server <- function(input, output,session) {
               for (model in 1:length(models$Model)){
                 
                 spectraPred <- newSpec.spc
-                #Do stuff with spectra. Return predictions (pred) and predicted Mahalanobis distance (set to 0 if none is calculated)
+                #Do stuff with spectra. Return predictions (predicted object) and predicted Mahalanobis distance (predMD, it will be set to 0 if nonthing is calculated is calculated)
                 predictSpectra(spectraPred, modelscript=models$Script[model])
                 
                 if (!exists(quote(predMD))){
