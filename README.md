@@ -44,3 +44,9 @@ Want to create you own models and use them with caMeL?
 - in your model script, contain all information necessary to return predictions (a "predicted" object). See DM.R for an example of a callable model compatible with caMeL.
 
 The caMeL app was created as part of a secondment funded from the European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement No. 841882.
+
+This project is licensed under the GNU General Public License v2.0 (GPL-2.0).
+
+By using this software, you agree to the terms and conditions set forth in the GPL-2.0 license. This means that you are free to use, modify, and distribute this software, provided that any derivative works or distributions you make are also licensed under the GPL-2.0.
+
+For more detailed information, please refer to the LICENSE file included in this repository.
